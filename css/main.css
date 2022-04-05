@@ -1,0 +1,46 @@
+
+#pop-up {
+  top: 100px;
+  right: 500px;
+  background-color: antiquewhite;
+  width: 400px;
+  height: 500px;
+  padding: 50px;
+  border-radius: 50px;
+  text-align: center;
+}
+h1 {
+  text-align: right;
+}
+#alert {
+  position: absolute;
+  top: 30px;
+  margin-left: 500px;
+  display: none;
+  width: 400px;
+}
+#block {
+  position: absolute;
+  top: 90px;
+  background-color: rgb(240, 199, 145);
+  border: 30px;
+
+  text-align: center;
+  padding: 30px;
+  border-radius: 50px;
+}
+#col1 {
+  background-color: #074063;
+  padding: 20px;
+  color: aliceblue;
+}
+#col2 {
+  background-color: orange;
+  padding: 20px;
+  color: aliceblue;
+}
+#col1>a,#col2>a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
