@@ -31,14 +31,28 @@ function seePassword(){
     }
 
 }
-function submit(){
 
-    var a = see.value;
+//confirm password
+document.getElementById("submit").addEventListener("click",confirm);
 
-    alert("text");
+function confirm(){
 
-   
-    
+	var pass = document.getElementById("password");
+	var confirm_pass = document.getElementById("confirm_password");
+	var number = document.getElementById("number");
+
+
+	var password = pass.value;
+	var confirm_password = confirm_pass.value;
+	var phonenumber = number.value
+
+	if(password !== confirm_password){
+		alert("password does not match")
+	
+	}
+
+	if(phonenumber.length < 10){
+		alert("phone number must contain 10 digits");
+	}
 }
-
 

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
     <link rel="stylesheet" href="./css/signup.css">
-    <title>Document</title>
+    <title>Home-mCarfixglobal</title>
 </head>
 <body>
 
@@ -17,23 +17,24 @@
 		<form action="#">
 			<h1>Create Account</h1>
 		
-			<input type="text" placeholder="Full Name" />
-			<input type="email" placeholder="Email" />
-            <input type="text" placeholder="Phone Number e.g 0723XXX256" />
-			<input type="password" placeholder="Password" id="password" />
-            <input type="checkbox"  onclick="seePassword()"><span>See Password</span>
-            <input type="password" placeholder=" Confirm Password" id="confirm_password" />
+			<input type="text" placeholder="Full Name" required />
+			<input type="email" placeholder="Email" required/>
+            <input type="text" placeholder="Phone Number e.g 0723XXX256" id="number" required/>
+			<input type="password" placeholder="Password" id="password" required/>
+            <input type="checkbox"  onclick="seePassword()" required ><span>See Password</span>
+            <input type="password" placeholder=" Confirm Password" id="confirm_password" required/>
             <span><a href="">Read Tearms & Condtions</a>
                 <br>
                 <br>
             </span>
 
+			<p id="alert"></p>
 
-			<button>Sign Up</button>
+			<button id="submit">Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form onsubmit="validate()">
 			<h1>Sign in</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -44,7 +45,7 @@
 			<input type="email" placeholder="Email" />
 			<input type="password" placeholder="Password" />
 			<a href="#">Forgot your password?</a>
-			<button onclick="submit()"><a href="./html/renewinsrurance.html">Sign In</a></button>
+			<button><a href="./html/renewinsrurance.html">Sign In</a></button>
 		</form>
 	</div>
 	<div class="overlay-container">
