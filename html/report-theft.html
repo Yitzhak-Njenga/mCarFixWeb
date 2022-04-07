@@ -59,6 +59,24 @@
 
             <div class="container" id="block">
                 <div class="row">
+
+
+
+                  <div class="card" style="position: absolute; height: 700px; line-height: 2rem;" id="card">
+                    
+                    <div class="card-body" >
+                      <h5 class="card-title">warranty and Disclaimer</h5>
+                      <p class="card-text">By accepting and using this feature, you hereby agree to the Terms of SkyTOP Technologies, the creators of mCarFix. <br> <br> SkyTOP Technologies is not a Law Enforcement Agent and will not be liable for the accuracy of the information transmitted through this system. All data contained and shared through this system is strictly for informational purposes only. <br> The information in this feature is provided “as is”,without express or implied warranty. It is solely designed for use, at the discretion of the relevant Law Enforcement officials. <br><br> SkyTOP Technologies is not responsible for misuse or misinterpretation of the data contained in this application</p>
+                    
+                        <div class="col order-last">
+                          <div id="btn">
+                            <a href=""><button id="hide">Proceed</button></a>
+                          
+                        </div>
+                      
+                    </div>
+                  </div>
+                  </div>
             
                   <fieldset class="border rounded p-2">
                     <legend class="float-none w-auto"><h2>Report Theft</h2></legend>
@@ -82,7 +100,7 @@
 
 
                         <div class="row mb-4">
-                          <div class="custom-select" >
+                          <div class="custom-selec" >
                             
                             <select>
                                 <label for="">Select Police Station</label>
@@ -164,7 +182,20 @@
         $('.mobile_nav_items').toggleClass('active');
       });
     });
+
+
+  
+$(document).ready(function(){
+	$("#hide").click(function(){
+		$("#card").hide();
+  
+	})
+})
+
+
     </script>
+
+
 
   </body>
 </html>
